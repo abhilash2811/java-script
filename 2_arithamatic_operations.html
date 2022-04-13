@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Arithamatic operations</h1>
+
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <p id="rem"></p>
+    <script>
+        let x = 5;
+        let y = 10;
+        const add = x + y;
+        const sub = x - y;
+        const mul = x * y;
+        const div = x / y;
+        const rem = x % y;
+ 
+        document.getElementById('add').innerHTML = "Addition (x+y) =   " + add;
+        document.getElementById('sub').innerHTML = "Subtraction (x-y) =  " + sub;
+        document.getElementById('mul').innerHTML = "Multiplication (x*y) =  " + mul;
+        document.getElementById('div').innerHTML = "Division (x/y) =  " + div;
+        document.getElementById('rem').innerHTML = "Division remainder  (x%y) =  " + rem;
+    </script>
+</body>
+
+</html>

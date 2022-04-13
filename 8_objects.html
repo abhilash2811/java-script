@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Object and nested object</Object></h1>
+    <p id="object"></p>
+    <script>
+        var mydetails = {
+            Firstname: "Abhilash",
+            lastname: "G",
+            idno: 444,
+            myinfo: {
+                gender: "male",
+                age: 25
+            }
+        };
+        document.getElementById('object').innerHTML = JSON.stringify(mydetails);
+    </script>
+</body>
+
+</html>

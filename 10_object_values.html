@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>object and print all values</h1>
+    <p><strong>object:</strong> and actions that can be performed by objects.</p>
+    <p id="object"></p>
+    <script>
+        const person = {
+            firstName: "Abhilash",
+            lastName: "G",
+            age: 26,
+            gender: "male",
+            hobbies: "watching cricket"
+        };
+        function myfunction() {
+            document.getElementById('object').innerHTML = person["firstName"] + " " + person["lastName"] + "<br>" +
+                person["age"] + "<br>" + person["gender"] + "<br>" + person["hobbies"];
+        }
+    </script>
+    <button type="button" onclick="myfunction()" value="click here">click here</button>
+</body>
+
+</html>

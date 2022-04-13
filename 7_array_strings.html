@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Array of strings and num,objects</h1>
+    <p id="array1"></p>
+    <p id="array2"></p>
+    <p id="array3"></p>
+    <p id="array4"></p>
+    <script>
+        const arr1 = new Array("string", "abhi", "ankush");
+        var arr2 = [1, 2, 3, 4];
+        const arr3 = [{ firstname: "abhilash" }, { lastname: "G" }, { age: 26 }];
+        var arr4 = [["abhilash", "ankush"], [1, 2, 4, 5]];
+        document.getElementById('array1').innerHTML = "array of strings are : " + arr1;
+        document.getElementById('array2').innerHTML = "array of numbers : " + arr2;
+        document.getElementById('array3').innerHTML = "array of object is : " + JSON.stringify(arr3);
+        document.getElementById('array4').innerHTML = "array of arrays is  :" + JSON.stringify(arr4);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>string and substring</h1>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script>
+    let str = "javascript";
+    let length = str.length;
+    let substr1 = str.substring(0,4);
+    function strfn() {
+      document.getElementById('demo1').innerHTML = "length of the string is " + length;
+    }
+    function substr() {
+      document.getElementById('demo2').innerHTML = substr1;
+    }
+  </script>
+  <button type="button" onclick="strfn()" value="length">length</button><br><br>
+  <button type="button" onclick="substr()" name="substr">substr</button>
+</body>
+</html>

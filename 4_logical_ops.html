@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var a, b;
+        function and() {
+            a = document.logical_ops.first.value;
+            b = document.logical_ops.second.value;
+            c = (a && b);
+            document.logical_ops.output.value = c;
+        }
+        function or() {
+            a = document.logical_ops.first.value;
+            b = document.logical_ops.second.value;
+            c = (a || b);
+            document.logical_ops.output.value = c;
+        }
+        function not() {
+            a = document.logical_ops.first.value;
+            b = document.logical_ops.second.value;
+            c = (!(a == b));
+            document.logical_ops.output.value = c;
+        }
+    </script>
+
+
+    <form name="logical_ops">
+        <label for="a">A =</label><br>
+        <input type="text" name="first"></input><br><br>
+        <label for="b">B =</label><br>
+        <input type="text" name="second"></input><br><br>
+
+        <input type="button" value="AND" onclick="and(a, b);"><br><br>
+        <input type="button" value="OR" onclick="or();"><br><br>
+        <input type="button" value="NOT" onclick="not();"><br><br>
+
+        <lebel for="output">Output</lebel>
+        <input type="text" name="output"></input>
+    </form>
+
+</body>
+
+</html>

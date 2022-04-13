@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var a, b;
+        function multiply() {
+            a = document.my_cal.first.value;
+            b = document.my_cal.second.value;
+            c = a * b;
+            document.my_cal.total.value = c;
+        }
+        function addition() {
+            a = document.my_cal.first.value;
+            b = document.my_cal.second.value;
+            c = a + b;
+            document.my_cal.total.value = c;
+        }
+        function subtraction() {
+            a = document.my_cal.first.value;
+            b = document.my_cal.second.value;
+            c = a - b;
+            document.my_cal.total.value = c;
+        }
+        function division() {
+            a = document.my_cal.first.value;
+            b = document.my_cal.second.value;
+            c = a / b;
+            document.my_cal.total.value = c;
+        }
+        function modulus() {
+            a = document.my_cal.first.value;
+            b = document.my_cal.second.value;
+            c = a % b;
+            document.my_cal.total.value = c;
+        }
+    </script>
+
+    <form name="my_cal">
+        <label for="a">A =</label>
+        <input type="text" name="first"></input><br><br>
+        <label for="b">B =</label>
+        <input type="text" name="second"></input>
+
+        <br><br>
+
+        <input type="button" value="ADD" onclick="addition();"><br><br>
+        <input type="button" value="SUB" onclick="subtraction();"><br><br>
+        <input type="button" value="MUL" onclick="multiply();"><br><br>
+        <input type="button" value="DIV" onclick="division();"><br><br>
+        <input type="button" value="MOD" onclick="modulus();"><br><br>
+
+
+        output = : <input type="text" name="total">
+
+</body>
+
+</html>
